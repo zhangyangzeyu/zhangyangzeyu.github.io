@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>计网课设报告</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('file:///Users/zhangyangzeyu/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('file:///Users/zhangyangzeyu/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('file:///Users/zhangyangzeyu/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('file:///Users/zhangyangzeyu/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    /*background: url("file:///Users/zhangyangzeyu/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 4px 2px 4px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 0.2em 1em;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>主动队列管理算法调研--项目报告</h1><h3><a name='header-n2' class='md-header-anchor '></a>一、问题概述与研究动机</h3><p>​        随着网络的不断普及，越来越多的网络节点已经产生或正在产生，这就必然会带来一个问题，网络拥塞。</p><p>​        网络拥塞会导致很多不良结果，其中最为重要也是我们最为关注的就是<strong>丢包率</strong>。试想一下，当数据包在到达目的地之前被丢弃了，它在传输过程中消耗的所有资源都会被浪费。这种情况如果出现频率过高，对整个网络的吞吐能力和稳定性而已都是大大不利的，极端严重时甚至会导致拥塞崩溃。虽然许多提议的增强功能已经进入实际实现，但连接仍然会遇到高丢包率。在大量拥塞的情况下，当大量连接竞争稀缺的网络带宽时，丢包率尤其高。</p><p>​        所以为了防止由于网络流量呈指数增长而导致的丢包率不断增加，我们调研了一种新的拥塞控制方法，Blue(蓝色)主动队列管理算法，后简称Blue或传统Blue。该算法核心在于根据丢包情况来定义拥塞程度，相比之前的Red算法更加科学有效，能够更好的匹配真实网络场景。当前大多数网络中，不会使用大量缓冲区（增加端到端时延和延迟抖动），且很多时候处于大量连接竞争稀缺的网络带宽的情况；在这样的场景下，由于Red算法依靠精准的参数设置(min_th和max_th)和足够的缓冲区才能发挥最好效果，显然不是很适合继续使用。以下为网络场景示意图：</p><p>​        </p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125215226634.png' alt='image-20190125215226634' referrerPolicy='no-referrer' /></p><p>​        </p><p>​        由于传统Blue在对于<strong>无响应流</strong>的处理和架构的稳定性上仍有扩展空间，之后我们又调研了它的部分扩展算法。其中SFB(随机公平Blue)是针对解决真实网络中存在<strong>无响应流</strong>的问题，之后会对该算法做较详细介绍。另一种扩展称作SBlue，它是结合了Red中用队列长度来定义拥塞程度的思想，在blue的基础上，增加red中的两个参数min_th、max_th。当平均队列长度大于max_th时增加丢包概率，平均队列长度小于min_th时减小丢包概率，以此<strong>形成负反馈</strong>让<strong>平均队列长度相对稳定</strong>，提升了Blue的稳定性。</p><p>&nbsp;</p><h3><a name='header-n8' class='md-header-anchor '></a>二、设计内容</h3><p>由于时间并不充裕，我们只设计了两部分的内容。一是通过实验方法对比Red和传统Blue的性能，二是对于Blue的扩展算法调研以及仿真实验实现。关于测试环境，由于之前的实验，我们已经拥有ns-3的环境。</p><h4><a name='header-n66' class='md-header-anchor '></a>设计部分：</h4><p><strong>1、对比实验设计</strong></p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125232510190.png' alt='image-20190125232510190' referrerPolicy='no-referrer' /></p><p>​                                                                                 部分关系变化表(下图)</p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125232649670.png' alt='image-20190125232649670' referrerPolicy='no-referrer' /></p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125232455856.png' alt='image-20190125232455856' referrerPolicy='no-referrer' /></p><p>这里我们需要强调，之所以将Red的性能设置为最优，是为了让实验结果更具说服力。</p><p>&nbsp;</p><p><strong>2、SFB实验设计</strong></p><p>由于无响应流的存在，传统blue是不公平的。它对于不响应拥塞通知的app，没有特殊处理。而在SFB中，会划分缓冲区用于flow是否为无响应流<strong>，</strong>若判断是则限制其带宽。以下为具体实现思想和伪码展示。</p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125233153132.png' alt='image-20190125233153132' referrerPolicy='no-referrer' /></p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125233207648.png' alt='image-20190125233207648' referrerPolicy='no-referrer' /></p><p>需要强调的是，在SFB中，<strong>参数的设置</strong>和<strong>对于无响应流的定义</strong>尤为关键。</p><p><strong>参数的设置</strong>：就拿游戏中的反作弊来说，如果判断出来一个玩家作弊，我们肯定需要对这个玩家进行一些惩罚才满足公平性，但是这个惩罚的方式以及程度的制定就显得尤为关键了，一定要适量。对应到这里的rate-limit，一定要合理设置，否则反而会造成不够公平的现象。</p><p><strong>对于无响应流的定义</strong>：同样，我们举一个游戏中的反作弊例子。我们通常接触到的游戏反作弊系统，其实都是有概率出错的，原因就在于我们是<strong>根据一个玩家对游戏公平性的影响程度</strong>来定义玩家是否作弊。这就导致了有可能出现误判的情况，比如玩家作弊了但是并未太影响游戏的公平性，此时并不会被判定为作弊。同样映射到这里，我们可能对无响应流做出错误的判断，但是这些错误判断并不会太影响整个网络的吞吐运行。</p><p>[SFB实验设计]：</p><p>基于SFB算法核心，设计实验来验证该算法在处理拥有大量无响应流的网络中有良好效果。同时，我们仍需要在其他情况，将它和传统Blue进行对比，以确保它的扩展改进不会影响其余情况的性能(确保扩展的可用性和有效性)</p><p>&nbsp;</p><h4><a name='header-n69' class='md-header-anchor '></a>代码部分：</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190126004051456.png' alt='image-20190126004051456' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>&nbsp;</p><h3><a name='header-n14' class='md-header-anchor '></a>三、<strong>测评结果</strong></h3><p>基于上面的设计，我们对Red和Blue的对比实验进行的仿真。由于时间原因，我们并没有实现所有自己的设计实验，且统计的性能指标也仅仅只有丢包率。以下是最终的实验结果展示图(部分配有分析)：</p><h4><a name='header-n79' class='md-header-anchor '></a>统计参数说明：</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125224039269.png' alt='image-20190125224039269' referrerPolicy='no-referrer' /></p><h4><a name='header-n75' class='md-header-anchor '></a><strong>1、缓冲区大小</strong>(buffer_size)的变化</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125225126059.png' alt='image-20190125225126059' referrerPolicy='no-referrer' /></p><p>由此我们不难发现，随着缓冲区的增加，Red的丢包率不断减小，而Blue没有明显变化。这完全验证了Red非常需要足够的缓冲区来使自身性能达到最佳。</p><p>&nbsp;</p><h4><a name='header-n125' class='md-header-anchor '></a>2、网络中<strong>负载</strong>的变化</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125225516929.png' alt='image-20190125225516929' referrerPolicy='no-referrer' /></p><p>由此不难发现，当负载量逐渐增大时，Red的丢包率急剧上升，而Blue则能够依靠其良好的预判性将丢包率稳定下来。</p><p>&nbsp;</p><h4><a name='header-n119' class='md-header-anchor '></a>3、路由器<strong>数据流量</strong>的变化</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125225349990.png' alt='image-20190125225349990' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>&nbsp;</p><h4><a name='header-n115' class='md-header-anchor '></a>4、往返时延(delay_time)的变化(Red和Blue的对比)</h4><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125224531190.png' alt='image-20190125224531190' referrerPolicy='no-referrer' /></p><p>​                                                                                 （red数据图）</p><p><img src='/Users/zhangyangzeyu/Library/Application Support/typora-user-images/image-20190125224601252.png' alt='image-20190125224601252' referrerPolicy='no-referrer' /></p><p>​                                                                                    （blue数据图）</p><p>从<strong>往返时延</strong>参数来看，Blue的丢包情况随着往返时延的变化波动很大，且时延增加丢包率也随之上升。而Red基本趋于稳定。由此可见，在算法的稳定性上，Red反而要更胜一筹，且更擅长运用于评价往返延时高的网络。这也说明现有的Blue算法还有很多需要改进的地方。</p><h4><a name='header-n133' class='md-header-anchor '></a>实验总结：</h4><p>通过这些实验数据对比，发现Blue确实在很多方面均优于Red，应该能够更好的服务于真实的网络场景。同时，它也存在一些不足之处，仍需要不断考虑其他因素来加以改进。</p><p>&nbsp;</p><h3><a name='header-n101' class='md-header-anchor '></a>四、讨论</h3><h4><a name='header-n18' class='md-header-anchor '></a>1、问题讨论</h4><p>开题阶段，不理解<strong>全局同步</strong>的概念。后经过查阅资料，发现全局同步的概念非常像物理学中的<strong>共振</strong>概念会影响链路利用率。[已解决]</p><p>开题阶段中没有理解SFB算法的核心思想。[已解决]</p><p>SFB算法的验证代码编写。[未解决]</p><p>实验数据图的对标验证。[未解决]</p><h4><a name='header-n20' class='md-header-anchor '></a>2、老师评价</h4><p>无过多评论，只是建议我们在实验结果上做一些对标处理。</p><p>&nbsp;</p><h3><a name='header-n22' class='md-header-anchor '></a>五、相关工作</h3><p>本次课设一共有七位同学(三个组)做这个方向的研究。我们时常在一起研究讨论，交流想法，共同攻坚克难。我们这三组大致分为了两部分人员，一部分负责理论研究和数据分析，一部分负责代码运行输出实验结果。在我们这个小组中，我(张阳泽雨)主要负责理论部分的研究，李泽霖同学主要负责跑代码。在我们的合作下，任务进展的比较顺利，也基本完成了之前定制的目标。</p><h3><a name='header-n24' class='md-header-anchor '></a>六、总结与展望</h3><p>通过这些天的调研和实验验证，觉得收获很多，也有一些遗憾之处。我们了解了现有控制拥塞的很多方法，惊叹于它们精妙的同时，也会发现他们的一些不足之处。很多算法仅仅是从一个方面出发去做考虑，并不能体现良好的适应性；此外有些算法虽然性能指标非常优秀，但往往在稳定性方面会欠考虑。所有综合来讲，我们希望之后有机会能够集百家之长，提出一种新的，更适合于大部分真实场景的算法。至于遗憾，就是在理解了SFB，SBlue等Blue的扩展算法之后，我们没有足够的时间进行测试代码的编写以及实验的验证。</p><p>&nbsp;</p><h3><a name='header-n219' class='md-header-anchor '></a>附录</h3><h5><a name='header-n379' class='md-header-anchor '></a>&lt;参考资料&gt;</h5><p>&quot;<strong>The BLUE Active Queue Management Algorithms</strong>&quot; </p><p>[Online]. Available:<a href='http://static.tongtianta.site/paper_pdf/7e4f4bac-14ae-11e9-b00c-00163e08bb86.pdf' target='_blank' class='url'>http://static.tongtianta.site/paper_pdf/7e4f4bac-14ae-11e9-b00c-00163e08bb86.pdf</a></p><p>[Author]. Wu-chang Feng, Kang G. Shin, Fellow, IEEE, Dilip D. Kandlur, Member, IEEE, and Debanjan Saha, Member, IEEE</p><p>&quot;<strong>SBlue: stabilized Blue</strong>&quot;</p><p>[Author]. WU Chun-ming1，JIANG Ming2</p><p><strong>&lt;网站地址&gt;</strong></p><p><a href='https://link.jianshu.com/?t=https://yiweiwoshiniya.github.io'>https://zhangyangzeyu.github.io</a></p><p>&nbsp;</p></div>
+</body>
+</html>
